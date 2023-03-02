@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text_while{
+    color: #fff !important;
+}
+#header{
+    width: 100%;
+    height: 46px;
+    background-color: #000;
+    position:fixed;
+    top: 0;
+    z-index: 1; 
+}
+#sub_home{
+    display: inline-block;
+}
+#sub_home > li{
+    display: inline-block;
+}
+#sub_home li{
+    position: relative;
+}
+#sub_home > li > a{
+    color: #fff;
+}
+#sub_home li a{
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+}
+#sub_home li:hover .sub_more{
+    display: block;
+}
+#sub_home > li:hover > a,.sub_more li:hover{
+    background-color: #ccc;
+    color: #000;
+    display: block;
+}
+#sub_home .sub_more{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(31, 30, 30);
+}
+.sub_more a{
+   color: #000;
+}
+
+#header .icon_btn{
+    float: right;
+}
+.icon_btn .icon_search{
+    font-size: 15px;
+    padding: 0 24px;
+    color: #fff;
+    line-height: 46px;
+}
+.icon_btn:hover .icon_search{
+    background-color: #f44336;
+    display: block;
+    cursor: pointer;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/css/image/chicago.jpg') top center / cover no-repeat;
+}
+.content_{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    bottom: 47px;
+    width: 100%;
+}
+.content_ .text1{
+    font-size: 24px;
+    font-weight: 300;
+}
+.content_ .text2{
+    font-size: 15px;
+    margin-top: 25px;     
+}
+#content .selection{
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 0;
+}
+#content .selection .seclection_heading{
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-align: center;
+}
+#content .selection .selection_sub_heading{
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    opacity: 0.6;
+    margin-top: 25px;
+}
+#content .selection .content_text1{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 22.5px;
+    margin-top: 25px;
+}
+.list_item .member_item{
+    float:left;
+    text-align: center;
+    margin-top: 48px;
+    width: 33.33333%;
+}
+.list_img .list_item .list_name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.list_img .list_item .list_imgs{
+    width: 154px;
+    border-radius: 4px;
+}
+.clear{
+    clear: both;
+}
+.tour_selection{
+    background-color: #000;
+    padding: 0 16px;
+}
+.tour_selection .selection_sub_heading{
+   margin-bottom: 40px;
+}
+.tour_selection .box_item li{
+    background-color: #fff;
+    font-size: 15px;
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+}
+
+.tour_selection .box_item .sold_out{
+    background-color: #f44336;
+    padding: 4px 4px;
+    color: #fff;
+    margin-left: 16px;
+}
+.tour_selection .box_item .again{
+    background-color: #000;
+    color: #fff;
+    float:right;
+    width: 24px;
+    height: 24px;
+    border-radius : 50%;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.list_place{
+    margin: 32px -8px;
+    
+}
+.member_place{
+    float: right;
+    width: 33.33333%;
+    padding :0 8px;
+    
+}
+.img_place{
+    width: 100%;
+    display: block;
+}
+.img_place:hover{
+    opacity: 0.6;
+}
+.content_places{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+.name_place{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.day_place{
+    margin-bottom: 15px;
+}
+.content_place{
+    margin-bottom: 15px;
+}
+.button_ticket{
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+.button_ticket:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.box_contact{
+
+}
+.content_card{
+
+}
+.box_card{
+
+}
+
+.modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);    
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+}
+.modal_container{
+    width: 900px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.modal_container .ti-close{
+    float :right;
+    font-size: 16px;
+    padding: 10px 14px;
+    color: #fff;
+}
+
+.modal_container .ti-close:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.modal_container .modal_header{
+    background-color: #009688;
+    padding: 42px 16px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 4px;
+}
+
+.modal_container .modal_body{
+    padding:0 16px;
+}
+.modal_body .modal_label {
+    display: block;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.modal_body .input_modal{
+    font-size: 15px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+.modal_body .buy-tickets{
+    padding: 16px;
+    margin: 16px 0;
+    width: 100%;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+}
+.modal_body .buy-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.modal_container .modal_footer{
+    float: right;
+    margin: 15px 0;
+    padding: 16px;
+}
